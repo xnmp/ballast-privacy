@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ballast — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid rgba(128,128,128,.35); vertical-align: top; }
+  th { font-weight: 600; }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(128,128,128,.35); opacity: .7; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Ballast — Privacy Policy</h1>
+<p class="sub">Last updated: 28 July 2026</p>
+
+<p>
+  Ballast is a personal journalling app. It is designed to keep your writing on
+  your own device. There is no Ballast account, no Ballast server, and no
+  Ballast backend — there is nowhere for your entries to be sent, because no
+  such service exists.
+</p>
+
+<h2>What stays on your device</h2>
+<p>
+  Your journal entries and your activity list are stored as ordinary files in a
+  <code>BallastData</code> folder on your device. They are never uploaded,
+  synced, backed up, or transmitted anywhere by the app. Nothing in the app
+  reads your entries and sends them elsewhere.
+</p>
+<p>
+  If you choose to sync that folder yourself — with Syncthing, a cloud drive, or
+  a manual copy — that transfer is governed by whichever tool you used, not by
+  Ballast.
+</p>
+
+<h2>What can leave your device</h2>
+<p>
+  One feature transmits data, and only when you explicitly ask it to: the in-app
+  feedback form. If you fill it in and tap submit, Ballast creates an issue in
+  the developer's issue tracker on GitHub containing:
+</p>
+
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr><td>The title and description you typed</td><td>So the bug or request can be understood and acted on</td></tr>
+  <tr><td>The app version</td><td>To know which build the report concerns</td></tr>
+  <tr><td>Your browser/OS user-agent string</td><td>To reproduce platform-specific problems</td></tr>
+</table>
+
+<p>
+  Nothing else is attached — no journal entries, no activity data, no logs, no
+  device identifiers, no advertising ID, no location. The request goes to
+  <code>api.github.com</code> over HTTPS and to no other host. The app's network
+  permissions are restricted at the operating-system level to that single
+  address, so it is not technically capable of contacting anywhere else.
+</p>
+<p>
+  This feature also requires you to supply your own GitHub access token before
+  it will do anything, so it is inert unless you have deliberately configured
+  it. That token is stored in the app's private configuration area on your
+  device, is never written into the <code>BallastData</code> folder, and is sent
+  only to GitHub as an authorisation header. You can remove it at any time from
+  the "More" screen.
+</p>
+
+<h2>What the app never does</h2>
+<ul>
+  <li>No analytics, telemetry, or usage tracking</li>
+  <li>No crash or error reporting to any service</li>
+  <li>No advertising, and no advertising identifiers</li>
+  <li>No third-party SDKs that collect data</li>
+  <li>No accounts, sign-in, or profiles</li>
+  <li>No selling or sharing of data — there is no data held to sell</li>
+</ul>
+
+<h2>Children</h2>
+<p>
+  Ballast is not directed at children and collects nothing that would identify
+  anyone, whatever their age.
+</p>
+
+<h2>Deleting your data</h2>
+<p>
+  Your entries are yours and local: delete the <code>BallastData</code> folder,
+  or individual files inside it, and they are gone. Note that on some platforms
+  this folder lives outside the app's own storage, so uninstalling Ballast may
+  leave it in place — delete it directly if you want it removed.
+</p>
+<p>
+  If you submitted feedback and want it deleted, email the address below and the
+  corresponding issue will be removed.
+</p>
+
+<h2>Changes</h2>
+<p>
+  If this policy changes, the revised version will be posted at this address
+  with an updated date above.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions or deletion requests: <a href="mailto:chonw89@gmail.com">chonw89@gmail.com</a>
+</p>
+
+<footer>
+  Ballast is developed by an individual, not a company.
+</footer>
+
+</body>
+</html>
