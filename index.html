@@ -66,9 +66,9 @@
   dedicated private branch of the Ballast GitHub repository. Nothing else is
   attached — no journal entries, no activity data, no logs, no device
   identifiers, no advertising ID, no location. Feedback requests go to
-  <code>api.github.com</code> over HTTPS and to no other host. The app's network
-  permissions are restricted at the operating-system level to that single
-  address, so it is not technically capable of contacting anywhere else.
+  <code>api.github.com</code> over HTTPS and to no other host. Ballast's direct
+  feedback requests are restricted at the operating-system level to that
+  single address.
 </p>
 <p>
   This feature also requires you to supply your own GitHub access token before
@@ -79,12 +79,23 @@
   the "More" screen.
 </p>
 
+<h2>Update checks</h2>
+<p>
+  When you tap "Update Ballast," the Google Play in-app update service checks
+  whether a newer eligible version is available. Google Play receives device
+  metadata, the installed app version, and the list of installed modules or
+  asset packs for this purpose. Google states that this data is encrypted, is
+  not transferred to third parties, and is deleted after a fixed retention
+  period. Google Play's terms and privacy policy govern this processing; the
+  Ballast developer does not receive this data.
+</p>
+
 <h2>What the app never does</h2>
 <ul>
   <li>No analytics, telemetry, or usage tracking</li>
   <li>No crash or error reporting to any service</li>
   <li>No advertising, and no advertising identifiers</li>
-  <li>No third-party SDKs that collect data</li>
+  <li>No analytics or advertising SDKs</li>
   <li>No accounts, sign-in, or profiles</li>
   <li>No selling or sharing of data — there is no data held to sell</li>
 </ul>
