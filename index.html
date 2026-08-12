@@ -23,33 +23,34 @@
 <body>
 
 <h1>Ballast — Privacy Policy</h1>
-<p class="sub">Last updated: 28 July 2026</p>
+<p class="sub">Last updated: 12 August 2026</p>
 
 <p>
   Ballast is a personal journalling app. It is designed to keep your writing on
   your own device. There is no Ballast account, no Ballast server, and no
-  Ballast backend — there is nowhere for your entries to be sent, because no
-  such service exists.
+  Ballast backend. Journal entries are not sent to the developer.
 </p>
 
 <h2>What stays on your device</h2>
 <p>
   Your journal entries and your activity list are stored as ordinary files in a
-  <code>BallastData</code> folder on your device. They are never uploaded,
-  synced, backed up, or transmitted anywhere by the app. Nothing in the app
-  reads your entries and sends them elsewhere.
+  <code>BallastData</code> folder on your device. Ballast does not automatically
+  upload or sync them. Nothing in the app reads your entries and sends them to
+  the developer.
 </p>
 <p>
-  If you choose to sync that folder yourself — with Syncthing, a cloud drive, or
-  a manual copy — that transfer is governed by whichever tool you used, not by
-  Ballast.
+  If you choose "Back up to Google Drive," Ballast creates a ZIP containing the
+  original entry files and activity settings, then opens your device's system
+  save picker. The backup is written only to the destination you select. The
+  chosen storage provider governs that transfer; the Ballast developer cannot
+  access the backup.
 </p>
 
 <h2>What can leave your device</h2>
 <p>
-  One feature transmits data, and only when you explicitly ask it to: the in-app
-  feedback form. If you fill it in and tap submit, Ballast creates an issue in
-  the developer's issue tracker on GitHub containing:
+  The in-app feedback form transmits data only when you explicitly tap submit.
+  Ballast creates an issue in the developer's private issue tracker on GitHub
+  containing:
 </p>
 
 <table>
@@ -57,11 +58,14 @@
   <tr><td>The title and description you typed</td><td>So the bug or request can be understood and acted on</td></tr>
   <tr><td>The app version</td><td>To know which build the report concerns</td></tr>
   <tr><td>Your browser/OS user-agent string</td><td>To reproduce platform-specific problems</td></tr>
+  <tr><td>An optional screenshot you selected</td><td>To show the problem you chose to report</td></tr>
 </table>
 
 <p>
-  Nothing else is attached — no journal entries, no activity data, no logs, no
-  device identifiers, no advertising ID, no location. The request goes to
+  Screenshots are optional, previewed before submission, and stored in a
+  dedicated private branch of the Ballast GitHub repository. Nothing else is
+  attached — no journal entries, no activity data, no logs, no device
+  identifiers, no advertising ID, no location. Feedback requests go to
   <code>api.github.com</code> over HTTPS and to no other host. The app's network
   permissions are restricted at the operating-system level to that single
   address, so it is not technically capable of contacting anywhere else.
@@ -88,7 +92,8 @@
 <h2>Children</h2>
 <p>
   Ballast is not directed at children and collects nothing that would identify
-  anyone, whatever their age.
+  anyone except for information a person deliberately includes in an optional
+  feedback report.
 </p>
 
 <h2>Deleting your data</h2>
@@ -100,7 +105,7 @@
 </p>
 <p>
   If you submitted feedback and want it deleted, email the address below and the
-  corresponding issue will be removed.
+  corresponding issue and optional screenshot will be removed.
 </p>
 
 <h2>Changes</h2>
